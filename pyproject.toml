@@ -1,0 +1,15 @@
+[project]
+name = "mlproduct"
+version = "0.1.0"
+authors = [{name="Lars Kjeldgaard"}]
+description = "Machine learning based product"
+readme = "README.md"
+requires-python = ">=3.10"
+dynamic = [
+    "dependencies",
+    "optional-dependencies",
+]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+optional-dependencies.dev = {file = ["requirements-dev.txt"]}

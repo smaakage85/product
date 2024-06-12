@@ -1,0 +1,6 @@
+mlflow-skinny<=2.7.1
+pydantic<=2.4.2
+fastapi<=0.104.0
+click<=8.1.7
+numpy
+scikit-learn
