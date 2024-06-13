@@ -6,7 +6,7 @@ jobs:
     steps:
     - name: Check-out repository 
       uses: actions/checkout@v4
-    - name: Create python environment
+    - name: Setup Python
       uses: actions/setup-python@v5
       with:
         python-version-file: 'pyproject.toml'
