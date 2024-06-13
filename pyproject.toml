@@ -4,7 +4,7 @@ version = "0.1.0"
 authors = [{name="Lars Kjeldgaard"}]
 description = "Product based on machine learning"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = "<3.12"
 dynamic = [
     "dependencies",
     "optional-dependencies",
