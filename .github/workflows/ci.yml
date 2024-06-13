@@ -5,11 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - name: Set up python environment
+    - name: Create python environment
       uses: actions/setup-python@v5
       with:
         python-version-file: 'pyproject.toml'
-      run: pip install -r requirements.txt -r requirements-dev.txt
+    - run: pip install -r requirements.txt -r requirements-dev.txt
     - name: Lint
       run: ruff check
     - name: Run tests
