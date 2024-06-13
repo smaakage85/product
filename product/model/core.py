@@ -82,7 +82,7 @@ class ModelInterface:
         logger.info(f"rmse = {rmse}")
         return rmse
 
-    def load_model_artifacts(self, dir: str = "artifacts") -> None:
+    def load_model(self, dir: str = "artifacts") -> None:
         """Load model from MLFlow model training artifacts
 
         Args:
