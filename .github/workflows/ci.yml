@@ -4,8 +4,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Set up environment
       uses: actions/checkout@v4
+    - name: Set up python environment
       uses: actions/setup-python@v5
       with:
         python-version-file: 'pyproject.toml'
