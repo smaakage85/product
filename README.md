@@ -3,6 +3,7 @@
 - rename training job
 - html reports from `pytest` and `coverage`
 - rename ModelInterface (to just "Model"?)
+- pip cache requirements*.txt
 - rename ModelInterface-methods - `load_model`, `format_input`
 - ruff configuration in pyproject.toml
 - automatic versioning
