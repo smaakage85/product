@@ -10,12 +10,12 @@ dynamic = [
     "optional-dependencies",
 ]
 
+[project.scripts]
+train_model = "product.model.jobs.training_job:run"
+
 [tool.setuptools.dynamic]
 dependencies = {file = ["requirements.txt"]}
 optional-dependencies.dev = {file = ["requirements-dev.txt"]}
-
-[project.scripts]
-train_model = "product.model.jobs.training_job:run"
 
 [build-system]
 requires = [
@@ -29,3 +29,15 @@ include = ["product*"]
 
 [tool.pytest.ini_options]
 addopts = "--basetemp=tests/.tmp -v --disable-warnings"
+
+[tool.coverage.run]
+source = [
+  'product'
+]
+omit = [
+  '__init__.py'
+]
+
+[tool.coverage.report]
+skip_empty = true
+fail_under = 80

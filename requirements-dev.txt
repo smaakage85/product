@@ -1,7 +1,6 @@
 pytest
-pytest-cov
+coverage
 httpx
 build
 ruff
 isort
-coverage

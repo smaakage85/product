@@ -3,5 +3,6 @@ venv/
 build/
 *.egg-info/
 mlruns/
-.coverage
 tests/.tmp/
+.coverage
+htmlcov/

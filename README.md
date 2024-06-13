@@ -1,15 +1,14 @@
 # My Machine Learning Based Product
 
-- `pytest-cov` or `coverage`
-- unlock dependencies
+- rename training job
+- html reports from `pytest` and `coverage`
 - rename ModelInterface (to just "Model"?)
 - rename ModelInterface-methods - `load_model`, `format_input`
-- move version and package name to .env file
+- ruff configuration in pyproject.toml
 - automatic versioning
-- test package dependencies
-- replace `mlflow` with `neptune-ai`?
-- replace `click` with `typer`?
-- pytest settings in pyproject.toml
-- ruff settings in pyproject.toml
+- unlock dependencies
 - unit test for `load_model`
-- rename training job
+- move version and package name to .env file
+- replace `click` with `typer`?
+- replace `mlflow` with `neptune-ai`?
+- test package dependencies
