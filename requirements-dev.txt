@@ -4,3 +4,5 @@ httpx
 build
 ruff
 isort
+pytest-html
+uvicorn

@@ -6,8 +6,8 @@ from math import ceil
 import click
 import mlflow
 
-from ..core import ModelInterface
 from ...utils.get_data import simulate_data
+from ..core import ModelInterface
 
 
 @click.command()

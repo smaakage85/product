@@ -12,10 +12,13 @@ coverage report
 ## TO-DO
 - rename training job
 - html reports from `pytest` and `coverage`
+    - save artifacts
 - rename ModelInterface (to just "Model"?)
-- pip cache requirements*.txt
 - rename ModelInterface-methods - `load_model`, `format_input`
+- downloaded/copied model artifacts stored in `.artifacts`
 - ruff configuration in pyproject.toml
+- forbedring af tests til API
+    - client(TestAPI)
 - Add CODEOWNERS
 - automatic versioning
 - unlock dependencies

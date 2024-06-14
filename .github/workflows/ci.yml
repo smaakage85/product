@@ -1,5 +1,7 @@
 name: Continuous Integration
+
 on: [push]
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,7 +18,11 @@ jobs:
       run: pip install -r requirements.txt -r requirements-dev.txt
     - name: Lint
       run: ruff check
-    - name: Run tests
+    - name: Run unit tests
       run: |
         coverage run -m pytest tests/unit
         coverage report -m
+    - name: Run integration tests
+      run: python -m pytest tests/integration
+    - name: Run end-to-end tests
+      run: python -m pytest tests/end_to_end
