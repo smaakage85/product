@@ -26,4 +26,7 @@ jobs:
       run: python -m pytest tests/integration
     - name: Run end-to-end tests
       run: python -m pytest tests/e2e
+    - name: Build package distributions
+      run: python -m build
+
 
