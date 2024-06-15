@@ -15,11 +15,13 @@ coverage report
     - save artifacts
 - rename ModelInterface (to just "Model"?)
 - rename ModelInterface-methods - `load_model`, `format_input`
+- rename `jobs` -> `scripts`
 - downloaded/copied model artifacts stored in `.artifacts`
 - ruff configuration in pyproject.toml
 - forbedring af tests til API
     - client(TestAPI)
     - tests til read root metode fra `fastapi` dokumentation
+- rename integrations-tests til e2e-tests?
 - Add CODEOWNERS
 - automatic versioning
 - unlock dependencies
