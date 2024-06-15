@@ -7,7 +7,7 @@ from product.model.jobs import training
 
 
 def test_e2e():
-    """Test that a model can be trained and then deployed through API"""
+    """Test that a model can be trained and then served through API"""
     # training
     runner = CliRunner()
     result = runner.invoke(training.run, ["--n_obs", 50], standalone_mode=False)
