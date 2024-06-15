@@ -5,4 +5,4 @@ build
 ruff
 isort
 pytest-html
-uvicorn
+twine

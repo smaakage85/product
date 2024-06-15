@@ -5,3 +5,4 @@ click<=8.1.7
 pandas
 numpy
 scikit-learn
+uvicorn
