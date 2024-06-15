@@ -11,9 +11,7 @@ from ..core import ModelInterface
 
 
 @click.command()
-@click.option(
-    "--n_obs", type=int, default=5000, help="Number of simulated observations."
-)
+@click.option("--n_obs", type=int, default=5000, help="Number of simulated observations.")
 @click.option(
     "--dont_log_model_artifacts",
     is_flag=True,

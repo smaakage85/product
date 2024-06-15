@@ -7,9 +7,7 @@ from product.model.core import ModelInterface
 
 @pytest.fixture
 def input_data():
-    x = pd.DataFrame(
-        np.array([[1, 1], [1, 2], [2, 2], [2, 3]]), columns=["age", "height"]
-    )
+    x = pd.DataFrame(np.array([[1, 1], [1, 2], [2, 2], [2, 3]]), columns=["age", "height"])
     y = np.dot(x, np.array([1, 2])) + 3
     return x, y
 

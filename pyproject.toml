@@ -1,6 +1,6 @@
 [project]
 name = "product"
-version = "0.2.0"
+version = "0.1.0"
 authors = [{name="Lars Kjeldgaard"}]
 description = "Product based on machine learning"
 readme = "README.md"
@@ -30,6 +30,15 @@ include = ["product*"]
 [tool.pytest.ini_options]
 addopts = "--basetemp=tests/.tmp -v --disable-warnings"
 
+[tool.ruff]
+exclude = [
+  "venv"
+]
+line-length = 100
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401"]
+
 [tool.coverage.run]
 source = [
   'product'
@@ -40,4 +49,3 @@ omit = [
 
 [tool.coverage.report]
 skip_empty = true
-fail_under = 80

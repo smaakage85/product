@@ -11,8 +11,6 @@ class Items(BaseModel):
 
     model_config = ConfigDict(
         json_schema_extra={
-            "examples": [
-                {"items": [{"age": 20, "skills": 0.3}, {"age": 49, "skills": -0.5}]}
-            ]
+            "examples": [{"items": [{"age": 20, "skills": 0.3}, {"age": 49, "skills": -0.5}]}]
         },
     )

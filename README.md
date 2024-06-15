@@ -19,6 +19,7 @@ coverage report
 - ruff configuration in pyproject.toml
 - forbedring af tests til API
     - client(TestAPI)
+    - tests til read root metode fra `fastapi` dokumentation
 - Add CODEOWNERS
 - automatic versioning
 - unlock dependencies
