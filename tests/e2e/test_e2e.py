@@ -6,7 +6,7 @@ from product import api
 from product.model.jobs import training
 
 
-def test_training_to_api():
+def test_e2e():
     """Test that a model can be trained and then deployed through API"""
     # training
     runner = CliRunner()
