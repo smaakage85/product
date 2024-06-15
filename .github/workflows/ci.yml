@@ -21,7 +21,7 @@ jobs:
     - name: Run unit tests
       run: |
         coverage run -m pytest tests/unit
-        coverage report -m
+        coverage report --fail-under 80
     - name: Run integration tests
       run: python -m pytest tests/integration
     - name: Run end-to-end tests
