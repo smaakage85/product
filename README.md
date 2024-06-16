@@ -17,7 +17,8 @@ coverage report
 - rename ModelInterface-methods - `load_model`, `format_input`
 - rename `jobs` -> `scripts`
 - downloaded/copied model artifacts stored in `.artifacts`
-- ruff configuration in pyproject.toml
+- ruff-configuration in pyproject.toml
+- switch to non-root user i Dockerfile
 - forbedring af tests til API
     - client(TestAPI)
     - tests til read root metode fra `fastapi` dokumentation
