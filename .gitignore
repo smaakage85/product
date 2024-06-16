@@ -6,3 +6,4 @@ mlruns/
 tests/.tmp/
 .coverage
 htmlcov/
+.envrc

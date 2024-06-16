@@ -26,11 +26,14 @@ jobs:
       run: python -m pytest tests/integration
     - name: Run end-to-end tests
       run: python -m pytest tests/e2e
-    - name: Build package distributions, upload to PyPI
+    - name: Publish package
       run: |
         python -m build
-        python -m twine upload -u ${USERNAME} -p ${PASSWORD} \
-              --repository-url ${REPO_PYPI} "dist/*"
-        
-
-
+        twine upload \
+          -u "$PYPI_USER" -p "$PYPI_PW" \
+          --repository $(PYPI_REPO) \
+          dist/*
+      env:
+        PYPI_USER: ${{ secrets.PYPI_USER }}
+        PYPI_PW: ${{ secrets.PYPI_PW }}
+        PYPI_REPO: ${{ vars.PYPI_REPO }}
