@@ -30,10 +30,9 @@ jobs:
       run: |
         python -m build
         twine upload \
-          -u "$PYPI_USER" -p "$PYPI_PW" \
+          -u __token__ -p "$PYPI_TOKEN" \
           --repository $PYPI_REPO \
           dist/*
       env:
-        PYPI_USER: ${{ secrets.PYPI_USER }}
-        PYPI_PW: ${{ secrets.PYPI_PW }}
+        PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
         PYPI_REPO: ${{ vars.PYPI_REPO }}
