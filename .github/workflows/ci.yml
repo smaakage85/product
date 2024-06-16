@@ -31,7 +31,7 @@ jobs:
         python -m build
         twine upload \
           -u "$PYPI_USER" -p "$PYPI_PW" \
-          --repository $(PYPI_REPO) \
+          --repository $PYPI_REPO \
           dist/*
       env:
         PYPI_USER: ${{ secrets.PYPI_USER }}
