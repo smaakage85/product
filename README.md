@@ -1,6 +1,6 @@
 # Machine Learning Based Product
 
-This is a generic machine learning based product.
+This repository showcases how a generic machine learning based product could be structured.
 
 ## Pipelines
 
