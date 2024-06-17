@@ -18,7 +18,7 @@ def init_model():
 
 @app.get("/")
 def read_root():
-    return {"hello": "world"}
+    return "Welcome to the model API!"
 
 
 @app.post("/predict")
