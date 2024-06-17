@@ -25,8 +25,8 @@ class Model:
 
     fitted_model: Optional[LinearRegression] = None
 
-    def format_input(self, x: pd.DataFrame) -> pd.DataFrame:
-        """Conduct feature engineering etcetera.
+    def engineer_features(self, x: pd.DataFrame) -> pd.DataFrame:
+        """Conduct feature engineering.
 
         Args:
             x (pd.DataFrame): Initial features.
@@ -48,7 +48,7 @@ class Model:
         """
         lr = LinearRegression()
         logger.info("Training model")
-        x = self.format_input(x)
+        x = self.engineer_features(x)
         lr.fit(x, y)
         logger.info("Training done.")
         self.model = lr
@@ -62,7 +62,7 @@ class Model:
         Returns:
             np.ndarray: Predictions.
         """
-        x = self.format_input(x)
+        x = self.engineer_features(x)
         preds = self.model.predict(x)
         return preds
 

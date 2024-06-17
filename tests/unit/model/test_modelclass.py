@@ -18,9 +18,9 @@ def model():
     return model
 
 
-def test_format_input(input_data, model):
+def test_engineer_features(input_data, model):
     x, y = input_data
-    x_log = model.format_input(x)["log_age"]
+    x_log = model.engineer_features(x)["log_age"]
     assert x_log.equals(np.log(x["age"]))
 
 
