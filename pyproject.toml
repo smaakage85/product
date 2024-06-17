@@ -28,7 +28,7 @@ build-backend = "setuptools.build_meta"
 include = ["product*"]
 
 [tool.pytest.ini_options]
-addopts = "--basetemp=tests/.tmp -v --disable-warnings"
+addopts = "--basetemp=tests/.tmp --disable-warnings"
 
 [tool.ruff]
 exclude = [

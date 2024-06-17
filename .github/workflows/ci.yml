@@ -29,7 +29,7 @@ jobs:
       run: python -m pytest tests/integration
     - name: Run end-to-end tests
       run: python -m pytest tests/e2e
-    - name: Publish package
+    - name: Upload package
       run: |
         python -m build
         twine upload \
@@ -39,3 +39,7 @@ jobs:
       env:
         PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
         PYPI_REPO: ${{ vars.PYPI_REPO }}
+    - name: Upload image
+      run: |
+        docker build -t product .
+        # docker push ...

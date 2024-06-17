@@ -1,33 +1,14 @@
-# My Machine Learning Based Product
+# Machine Learning Based Product
 
-## Testing
+This is a generic machine learning based product. Bla bla.
 
-Unit tests 
+## Pipelines
+
+The `make` targets below approximate the execution of essential MLOps CI/CD jobs:
 
 ```bash
-coverage run -m pytest tests/unit
-coverage report
+make build-pipe
+make training-pipe ARGS='--n_obs 123'
+make deploy-pipe RUN_ID=37d75af6d11c44eebbd3e1c9ee3924c6
 ```
 
-## TO-DO
-- rename training job
-- html reports from `pytest` and `coverage`
-    - save artifacts
-- rename ModelInterface (to just "Model"?)
-- rename ModelInterface-methods - `load_model`, `format_input`
-- rename `jobs` -> `scripts`
-- downloaded/copied model artifacts stored in `.artifacts`
-- ruff-configuration in pyproject.toml
-- switch to non-root user i Dockerfile
-- forbedring af tests til API
-    - client(TestAPI)
-    - tests til read root metode fra `fastapi` dokumentation
-- rename integrations-tests til e2e-tests?
-- Add CODEOWNERS
-- automatic versioning
-- unlock dependencies
-- unit test for `load_model`
-- move version and package name to .env file
-- replace `click` with `typer`?
-- replace `mlflow` with `neptune-ai`?
-- test package dependencies
