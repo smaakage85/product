@@ -1,6 +1,6 @@
 [project]
 name = "product"
-version = "0.0.2"
+version = "0.0.3"
 authors = [{name="Lars Kjeldgaard"}]
 description = "Product based on machine learning"
 readme = "README.md"
@@ -28,7 +28,7 @@ build-backend = "setuptools.build_meta"
 include = ["product*"]
 
 [tool.pytest.ini_options]
-addopts = "--basetemp=tests/.tmp --disable-warnings"
+addopts = "--basetemp=tests/.tmp -v --disable-warnings"
 
 [tool.ruff]
 exclude = [
