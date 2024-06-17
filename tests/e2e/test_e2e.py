@@ -3,7 +3,7 @@ import pytest
 from click.testing import CliRunner
 from fastapi.testclient import TestClient
 from product import api
-from product.model.jobs import training
+from product.model.scripts import training
 
 
 def test_e2e():

@@ -17,7 +17,7 @@ build-image:
 build-pipe: lint run-tests build-package build-image
 
 training-pipe:
-	python -m product.model.jobs.training ${ARGS}
+	python -m product.model.scripts.training ${ARGS}
 
 dl-model-artifacts:
 	-rm -rf artifacts

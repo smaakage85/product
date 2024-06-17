@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from product.model.core import ModelInterface
+from product.model.core import Model
 
 
 @pytest.fixture
@@ -14,7 +14,7 @@ def input_data():
 
 @pytest.fixture
 def model():
-    model = ModelInterface()
+    model = Model()
     return model
 
 

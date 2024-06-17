@@ -14,16 +14,16 @@ logger = logging.getLogger(__name__)
 
 
 @dataclass
-class ModelInterface:
-    """Model Interface.
+class Model:
+    """Machine Learning/AI model .
 
-    Interface with basic methods for implementing a ML model.
+    Classes with basic methods, thats implements a ML model.
 
     Args:
-        model (LinearRegression): Linear model.
+        fitted_model (LinearRegression): Linear model.
     """
 
-    model: Optional[LinearRegression] = None
+    fitted_model: Optional[LinearRegression] = None
 
     def format_input(self, x: pd.DataFrame) -> pd.DataFrame:
         """Conduct feature engineering etcetera.
@@ -82,7 +82,7 @@ class ModelInterface:
         logger.info(f"rmse = {rmse}")
         return rmse
 
-    def load_model(self, dir: str = "artifacts") -> None:
+    def load_fitted_model(self, dir: str = "artifacts") -> None:
         """Load model from MLFlow model training artifacts
 
         Args:

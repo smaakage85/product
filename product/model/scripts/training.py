@@ -7,7 +7,7 @@ import click
 import mlflow
 
 from ...utils.get_data import simulate_data
-from ..core import ModelInterface
+from ..core import Model
 
 
 @click.command()
@@ -23,11 +23,11 @@ def run(n_obs: int, dont_log_model_artifacts: bool) -> str:
     """Run model training, evaluate performance and log to MLFlow."""
     logger = logging.getLogger(__name__)
     logging.basicConfig(level=logging.INFO)
-    logger.info("Running training job")
+    logger.info("Running model training")
 
     with mlflow.start_run() as run:
         # get data and train model
-        m = ModelInterface()
+        m = Model()
         y_train, x_train = simulate_data(n=n_obs, sigma=1e3)
         y_test, x_test = simulate_data(n=ceil(n_obs * 0.3), sigma=1e3)
         m.train(x_train, y_train)
