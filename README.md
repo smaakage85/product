@@ -1,6 +1,6 @@
 # Machine Learning Based Product
 
-This is a generic machine learning based product. Bla bla.
+This is a generic machine learning based product.
 
 ## Pipelines
 
