@@ -40,6 +40,7 @@ def run(n_obs: int, dont_log_model_artifacts: bool) -> str:
         logger.info("Logging model and metadata to MLFlow")
         mlflow.log_metric("train_rmse", train_rmse)
         mlflow.log_metric("test_rmse", test_rmse)
+        mlflow.log_param("n_obs", n_obs)
         if not dont_log_model_artifacts:
             mlflow.sklearn.log_model(m.model, "model")
 

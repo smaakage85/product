@@ -1,9 +1,6 @@
 name: Continuous Integration
 
-on:
-  push:
-    paths:
-      - product/**
+on: [push]
 
 jobs:
   build:
