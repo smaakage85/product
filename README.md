@@ -4,7 +4,7 @@ This is a generic machine learning based product. Bla bla.
 
 ## Pipelines
 
-The `make` targets below approximate the execution of essential MLOps CI/CD jobs:
+The `make` targets below approximate builds of essential MLOps CI/CD jobs:
 
 ```bash
 make build-pipe
